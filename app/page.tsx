@@ -177,8 +177,7 @@ export default function Home() {
           onClick={(e) => handleTap(e)} // Added tap event handler
         >
           <div
-            className="flex transition-transform duration-300 ease-in-out"
-            style={transformStyle}
+            className={`flex transition-transform duration-300 ease-in-out transform-${index}`}
           >
             {sliders.map((src, i) => (
               <div key={i} className="min-w-full flex-shrink-0">
